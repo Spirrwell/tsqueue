@@ -129,7 +129,7 @@ namespace spl
 			--storage_size;
 
 			out.emplace( std::move( storage[storage_size] ) );
-			std::destroy_at( &storage[storage_size] );
+			destroy_at( &storage[storage_size] );
 		}
 
 		void clear()
